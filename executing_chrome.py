@@ -38,9 +38,8 @@ def start_chrome(port):
                   + r'\instances_of_chrome' + fr'\{port}'
         print('Creating directory')
         new_directory = path_to_chrome_instances + fr'\{port}'
-        print(new_directory)
+
         os.mkdir(new_directory)
-        print(command)
         os.system(command)
 
         chrome_options = webdriver.ChromeOptions()
